@@ -3,7 +3,6 @@ import React from 'react'
 function DonationForm() {
   return (
     <div>
-    
 <section className="donation">
   <h3>You could be donation <span class="secondary">#1!</span></h3>
   <form>
@@ -26,7 +25,6 @@ function DonationForm() {
   </form>
 </section>
 
-    
     </div>
   )
 }
