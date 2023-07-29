@@ -1,13 +1,25 @@
 import React from 'react'
 
-function RecentDonations() {
+function RecentDonations({donations}) {
+  let donorName = ""
+    let donorAmount = ""
+    let donorMeassage = ""
+    const donationList = []
+  
+  for(let donation of donations){
+     donationList.push(
+     <li><span>
+      {donation.name} donated ${donation.amount}</span> {donation.caption}
+     </li>)
+  }
+  
   return (
     <div>
       <section>
   <h2>Recent Donations</h2>
   <ul>
-    <li><span>Jo donated $25</span>You really need this. Really.</li>
-    <li><span>Rami donated $10</span>Here, take a break from work!</li>
+  {donationList}
+    
   </ul>
 </section>
     </div>

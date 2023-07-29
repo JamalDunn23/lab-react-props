@@ -1,10 +1,11 @@
 import React from 'react'
 
-function DonationForm() {
+const DonationForm =({targetAmount, donations})=> {
+  let winner = donations.length + 1
   return (
     <div>
 <section className="donation">
-  <h3>You could be donation <span class="secondary">#1!</span></h3>
+  <h3>You could be donation <span class="secondary">({winner})</span></h3>
   <form>
     <label htmlFor="name"
       >Name<input

@@ -1,12 +1,17 @@
 import React from "react";
 
-function Progress() {
+function Progress({targetAmount, donations}) {
+let sum = 0
+for( let donation of donations){
+  sum += donation.amount
+
+}
   return (
     <div>
       <section className="progress">
         <h2>
-          Raised <span className="secondary">$0</span> of
-          <span className="secondary">$1000</span>
+          Raised <span className="secondary">${sum}</span> of
+          <span className="secondary"> ${targetAmount}</span>
         </h2>
       </section>
     </div>
