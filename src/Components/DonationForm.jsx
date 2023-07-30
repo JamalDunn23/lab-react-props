@@ -1,6 +1,8 @@
 import React from 'react'
 
 const DonationForm =({targetAmount, donations})=> {
+
+
   let winner = donations.length + 1
   return (
     <div>
